@@ -15,7 +15,7 @@ export function MobileMenu() {
   const [open, setOpen] = useState(false);
   return (
     <div className="md:hidden">
-      <button onClick={() => setOpen(!open)} aria-label="Toggle navigation"
+      <button onClick={() => setOpen(!open)} aria-label="Toggle navigation" aria-expanded={open}
         className="flex h-10 w-10 flex-col items-center justify-center gap-1.5">
         <span className={`block h-0.5 w-6 bg-current transition-transform ${open ? "translate-y-2 rotate-45" : ""}`} />
         <span className={`block h-0.5 w-6 bg-current transition-opacity ${open ? "opacity-0" : ""}`} />

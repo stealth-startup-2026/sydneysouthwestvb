@@ -12,10 +12,10 @@ const NAV = [
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-50 border-b border-dark/10 bg-white shadow-sm">
+    <header className="relative sticky top-0 z-50 border-b border-dark/10 bg-white shadow-sm">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3">
-          <Image src="/images/logo.jpg" alt="SSWV" width={40} height={40} className="rounded-full object-cover" />
+          <Image src="/images/logo.jpg" alt="SSWV" width={40} height={40} className="rounded-full object-cover" preload />
           <span className="font-heading text-lg font-bold uppercase leading-tight tracking-wide text-dark sm:text-xl">
             Sydney South West
             <span className="block text-green">Volleyball</span>
@@ -33,7 +33,7 @@ export function SiteHeader() {
             Join Now
           </a>
         </nav>
-        <div className="relative md:hidden">
+        <div className="md:hidden">
           <MobileMenu />
         </div>
       </div>
