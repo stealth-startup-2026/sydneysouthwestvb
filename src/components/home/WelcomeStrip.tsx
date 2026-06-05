@@ -20,7 +20,7 @@ export function WelcomeStrip() {
         <div className="grid gap-6 sm:grid-cols-3">
           {PILLARS.map((p) => (
             <div key={p.title} className="rounded-xl border border-green/30 bg-white/5 px-6 py-8 text-center">
-              <span className="mb-4 block text-4xl">{p.icon}</span>
+              <span aria-hidden="true" className="mb-4 block text-4xl">{p.icon}</span>
               <h3 className="mb-3 font-heading text-xl font-bold uppercase tracking-wide text-gold">{p.title}</h3>
               <p className="text-sm leading-relaxed text-white/70">{p.body}</p>
             </div>
