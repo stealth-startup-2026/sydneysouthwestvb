@@ -54,11 +54,11 @@ export default function ProgramsPage() {
         imageSrc="/images/hero-2.jpg"
         imageAlt="Training session"
       />
-      <div className="divide-y divide-dark/5">
+      <section aria-label="Our Programs" className="divide-y divide-dark/5">
         {PROGRAMS.map((p) => (
           <ProgramBlock key={p.id} {...p} />
         ))}
-      </div>
+      </section>
       <section aria-label="Contact prompt" className="bg-dark py-16">
         <Container>
           <div className="text-center">
