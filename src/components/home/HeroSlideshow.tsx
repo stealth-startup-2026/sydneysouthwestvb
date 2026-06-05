@@ -23,13 +23,13 @@ export function HeroSlideshow() {
     <div className="absolute inset-0" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
       {SLIDES.map((slide, i) => (
         <div key={slide.src} className={`absolute inset-0 transition-opacity duration-1000 ${i === current ? "opacity-100" : "opacity-0"}`}>
-          <Image src={slide.src} alt={slide.alt} fill className="object-cover" preload={i === 0} sizes="100vw" />
+          <Image src={slide.src} alt={slide.alt} fill className="object-cover" loading="eager" sizes="100vw" />
         </div>
       ))}
       <div className="absolute inset-0 bg-gradient-to-r from-dark/85 via-dark/60 to-dark/20" />
       <div className="absolute bottom-6 left-1/2 z-10 flex -translate-x-1/2 gap-2">
         {SLIDES.map((_, i) => (
-          <button key={i} onClick={() => setCurrent(i)} aria-label={`Slide ${i + 1}`}
+          <button key={i} onClick={() => setCurrent(i)} aria-label={`Slide ${i + 1}`} aria-current={i === current ? "true" : undefined}
             className={`h-2 rounded-full transition-all ${i === current ? "w-6 bg-gold" : "w-2 bg-white/50"}`} />
         ))}
       </div>

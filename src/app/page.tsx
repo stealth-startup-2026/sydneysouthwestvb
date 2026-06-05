@@ -11,9 +11,9 @@ import { JoinCtaBanner } from "@/components/home/JoinCtaBanner";
 export default function HomePage() {
   return (
     <>
-      <section className="relative flex min-h-[90vh] items-center overflow-hidden bg-dark">
+      <section aria-label="Hero" className="relative flex min-h-[90vh] items-center overflow-hidden bg-dark">
         <HeroSlideshow />
-        <div className="absolute bottom-8 right-8 z-10 opacity-20">
+        <div aria-hidden="true" className="absolute bottom-8 right-8 z-10 opacity-20">
           <Image src="/images/logo.jpg" alt="" width={100} height={100} className="rounded-full" />
         </div>
         <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-32 sm:px-6 lg:px-8">
