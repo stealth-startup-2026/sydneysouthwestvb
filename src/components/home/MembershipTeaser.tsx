@@ -16,7 +16,7 @@ export function MembershipTeaser() {
           <div className="rounded-xl bg-dark/40 p-8 text-center ring-1 ring-white/10">
             <span aria-hidden="true" className="mb-3 block text-4xl">🏐</span>
             <h3 className="font-heading text-2xl font-bold uppercase tracking-wide text-gold">Recreational Membership</h3>
-            <p className="mt-3 text-sm leading-relaxed text-white/80">For players who love the sport without the league commitment — all the fun, none of the pressure.</p>
+            <p className="mt-3 text-sm leading-relaxed text-white/80">For players who want regular volleyball without a league commitment.</p>
           </div>
         </div>
         <div className="mt-10 text-center">

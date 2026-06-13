@@ -26,7 +26,7 @@ export function HeroSlideshow() {
           <Image src={slide.src} alt={slide.alt} fill className="object-cover" loading="eager" sizes="100vw" />
         </div>
       ))}
-      <div className="absolute inset-0 bg-gradient-to-r from-dark/85 via-dark/60 to-dark/20" />
+      <div className="absolute inset-0 bg-gradient-to-r from-dark/90 from-10% via-dark/40 via-40% to-transparent to-70%" />
       <div className="absolute bottom-6 left-1/2 z-10 flex -translate-x-1/2 gap-2">
         {SLIDES.map((_, i) => (
           <button key={i} onClick={() => setCurrent(i)} aria-label={`Slide ${i + 1}`} aria-current={i === current ? "true" : undefined}

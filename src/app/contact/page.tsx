@@ -23,8 +23,8 @@ export default function ContactPage() {
 
       <section aria-label="Contact information and form" className="bg-white py-20">
         <Container>
-          <SectionHeader eyebrow="We'd Love to Hear From You" title="Contact Us"
-            subtitle="Questions about membership, programs, trials, or anything else — we're here to help." />
+          <SectionHeader eyebrow="Get in Touch" title="Contact Us"
+            subtitle="Questions about membership, programs, or trials can be directed to the club using the details below." />
           <div className="grid gap-12 lg:grid-cols-2">
             <div className="space-y-8">
               <div>

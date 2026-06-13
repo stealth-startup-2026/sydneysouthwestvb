@@ -1,9 +1,9 @@
 import { Container } from "@/components/ui/Container";
 
 const PILLARS = [
-  { icon: "🤝", title: "Community", body: "A welcoming club where beginners and seasoned players train side by side and lifelong friendships are formed." },
-  { icon: "🏆", title: "Coaching", body: "Expert guidance from Coach Ba, Rob, and Steven — combining technical drills with game-sense development." },
-  { icon: "⚡", title: "Competition", body: "Clear pathways into YSVL and SVL for players who want to test themselves in organised competition." },
+  { icon: "🤝", title: "Community", body: "A club where beginners and experienced players train together across all sessions." },
+  { icon: "🏆", title: "Coaching", body: "Coaching from Coach Ba, Rob, and Steven, combining technical drills with game-sense development." },
+  { icon: "⚡", title: "Competition", body: "Pathways into YSVL and SVL competition for players moving into organised league play." },
 ];
 
 export function WelcomeStrip() {
@@ -14,7 +14,7 @@ export function WelcomeStrip() {
           <p className="mb-2 font-heading text-sm font-semibold uppercase tracking-widest text-gold">Est. 2021 · Fairfield &amp; Bonnyrigg</p>
           <h2 className="font-heading text-4xl font-bold uppercase tracking-wide text-white sm:text-5xl">Welcome to SSWV</h2>
           <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/60">
-            Sydney South West Volleyball is a community club built for everyone — whether you&apos;re picking up a ball for the first time or chasing a league title.
+            Sydney South West Volleyball is a community club offering training and competition for players of all levels.
           </p>
         </div>
         <div className="grid gap-6 sm:grid-cols-3">

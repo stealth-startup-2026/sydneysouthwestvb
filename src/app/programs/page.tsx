@@ -10,7 +10,7 @@ const PROGRAMS = [
     eyebrow: "Open to All",
     flip: false,
     description:
-      "Our social training sessions are the heartbeat of the club. Low-pressure, high-energy — these sessions are open to players of any skill level. Come to stay active, meet the community, and touch a volleyball without any expectation beyond having fun.",
+      "Social training sessions are open to players of any skill level. They provide a regular, low-pressure opportunity to stay active and play, with no prior experience required.",
     whoFor: "Anyone — complete beginners to experienced players",
     schedule: "Check our socials for current days and times",
     location: "Fairfield & Bonnyrigg (rotating)",
@@ -23,7 +23,7 @@ const PROGRAMS = [
     eyebrow: "Game Experience",
     flip: true,
     description:
-      "Nothing accelerates improvement like real match play. Our weekly scrims give you structured game time without the commitment of a league team. Organised into fair matches by our coaches, these sharpen your game-sense and decision-making under pressure.",
+      "Weekly scrims provide structured game time without the commitment of a league team. Coaches organise balanced matches that develop game-sense and decision-making under pressure.",
     whoFor: "Intermediate players wanting match experience",
     schedule: "Weekly — check socials for times",
     location: "Fairfield & Bonnyrigg",
@@ -66,7 +66,7 @@ export default function ProgramsPage() {
               Not sure which program suits you?
             </h2>
             <p className="mx-auto mt-4 max-w-lg text-base text-white/70">
-              Get in touch and we&apos;ll point you in the right direction.
+              Contact us for guidance on which program suits your level.
             </p>
             <div className="mt-8">
               <Button href="/contact" variant="primary">

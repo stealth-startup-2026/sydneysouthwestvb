@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/Button";
 const STEPS = [
   { num: "01", label: "Fill out the EOI form via our contact page" },
   { num: "02", label: "We'll email you the trial date and details" },
-  { num: "03", label: "Attend the trial — bring your best game" },
+  { num: "03", label: "Attend the trial on the scheduled date" },
   { num: "04", label: "Successful players are notified and onboarded" },
 ];
 

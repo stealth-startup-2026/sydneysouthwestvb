@@ -9,7 +9,7 @@ export function JoinCtaBanner() {
             Ready to Join <span className="text-gold">the Pandas?</span>
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-base leading-relaxed text-white/70">
-            Whether you&apos;re here for the fun, the competition, or both — there&apos;s a place for you at SSWV.
+            SSWV offers programs for both social and competitive players across South West Sydney.
           </p>
           <a href="https://www.revolutionise.com.au/sswv" target="_blank" rel="noopener noreferrer"
             className="mt-8 inline-block rounded bg-gold px-10 py-4 font-heading text-sm font-semibold uppercase tracking-widest text-dark transition hover:brightness-110">

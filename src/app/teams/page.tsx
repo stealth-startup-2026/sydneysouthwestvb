@@ -23,10 +23,9 @@ export default function TeamsPage() {
             <SectionHeader eyebrow="Pathways at SSWV" title="From Social to Competitive" />
             <p className="text-base leading-relaxed text-muted">
               SSWV runs competitive teams in both the Youth Sydney Volleyball
-              League (YSVL) and the Sydney Volleyball League (SVL). If
-              you&apos;ve been building your game through our social programs
-              and want to take the next step, our competitive teams are the
-              natural pathway.
+              League (YSVL) and the Sydney Volleyball League (SVL). These teams
+              provide a pathway for players progressing from the club&apos;s
+              social programs into organised competition.
             </p>
           </div>
         </Container>
@@ -37,14 +36,14 @@ export default function TeamsPage() {
           <SectionHeader
             eyebrow="Youth Competition"
             title="YSVL Teams"
-            subtitle="The Youth Sydney Volleyball League — structured junior competition for players aged 12–18 looking to test themselves in an organised setting."
+            subtitle="The Youth Sydney Volleyball League — structured junior competition for players aged 12–18 in an organised setting."
           />
           <div className="grid gap-6 sm:grid-cols-2">
             <TeamCard
               name="SSWV Youth"
               league="Youth Sydney Volleyball League"
               division="Junior"
-              description="Our YSVL squad competes in organised junior competition across the Sydney metro area. Coached with a development-first mindset, players build competitive experience while continuing to grow technically and as teammates."
+              description="The YSVL squad competes in junior competition across the Sydney metro area. Coaching focuses on player development alongside competitive experience."
               image="/images/teams-ysvl.jpg"
               imageAlt="SSWV youth team"
             />
@@ -54,8 +53,8 @@ export default function TeamsPage() {
                   More Teams Coming
                 </p>
                 <p className="mt-3 text-sm text-muted">
-                  We&apos;re growing. Additional YSVL divisions will be added
-                  as the club expands. Check our socials for updates.
+                  Additional YSVL divisions will be added as the club expands.
+                  Check our socials for updates.
                 </p>
               </div>
             </div>
@@ -76,7 +75,7 @@ export default function TeamsPage() {
               name="SSWV Men's"
               league="Sydney Volleyball League"
               division="D2 Men's"
-              description="The SSWV Men's team competes in Division 2 of the SVL. A tight-knit squad focused on building consistency and pushing for promotion. EOIs open each season — contact us to find out more."
+              description="The SSWV Men's team competes in Division 2 of the SVL, focused on building consistency across the season. Expressions of interest open each season — contact us for details."
               image="/images/teams-svl.jpg"
               imageAlt="SSWV men's team match"
             />

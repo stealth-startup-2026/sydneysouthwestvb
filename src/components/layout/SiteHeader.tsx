@@ -1,5 +1,7 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { MobileMenu } from "./MobileMenu";
 
 const NAV = [
@@ -11,25 +13,27 @@ const NAV = [
 ];
 
 export function SiteHeader() {
+  const pathname = usePathname();
   return (
-    <header className="relative sticky top-0 z-50 border-b border-dark/10 bg-white shadow-sm">
+    <header className="relative sticky top-0 z-50 border-b border-white/10 bg-dark shadow-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-3">
-          <Image src="/images/logo.jpg" alt="SSWV" width={40} height={40} className="rounded-full object-cover" preload />
-          <span className="font-heading text-lg font-bold uppercase leading-tight tracking-wide text-dark sm:text-xl">
-            Sydney South West
-            <span className="block text-green">Volleyball</span>
-          </span>
+        <Link href="/" className="flex items-center">
+          <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-black">
+            <Image src="/images/logo.jpg" alt="Sydney South West Volleyball" width={52} height={52} className="rounded-lg object-cover" preload />
+          </div>
         </Link>
-        <nav className="hidden items-center gap-6 md:flex">
-          {NAV.map((link) => (
-            <Link key={link.href} href={link.href}
-              className="font-heading text-sm font-semibold uppercase tracking-wider text-dark transition hover:text-green">
-              {link.label}
-            </Link>
-          ))}
+        <nav className="hidden items-center gap-1 md:flex">
+          {NAV.map((link) => {
+            const active = pathname === link.href;
+            return (
+              <Link key={link.href} href={link.href}
+                className={`rounded px-3 py-2 font-heading text-sm font-semibold uppercase tracking-wider transition ${active ? "bg-green text-white" : "text-white/70 hover:bg-white/10 hover:text-white"}`}>
+                {link.label}
+              </Link>
+            );
+          })}
           <a href="https://www.revolutionise.com.au/sswv" target="_blank" rel="noopener noreferrer"
-            className="rounded bg-green px-5 py-2 font-heading text-sm font-semibold uppercase tracking-wider text-white transition hover:brightness-110">
+            className="ml-4 rounded bg-gold px-5 py-2 font-heading text-sm font-semibold uppercase tracking-wider text-dark transition hover:brightness-110">
             Join Now
           </a>
         </nav>

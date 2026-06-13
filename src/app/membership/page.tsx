@@ -28,17 +28,17 @@ const WHY = [
   {
     icon: "🧠",
     title: "Expert Coaching",
-    body: "Learn from Coach Ba, Rob, and Steven — combining competitive experience with a genuine passion for player development.",
+    body: "Coaching from Coach Ba, Rob, and Steven, combining competitive and coaching experience across all programs.",
   },
   {
     icon: "⚡",
     title: "Technical + Fun",
-    body: "The perfect mix of structured skill training and enjoyable gameplay. You'll improve every session and actually look forward to coming back.",
+    body: "A combination of structured skill training and regular gameplay in every session.",
   },
   {
     icon: "👫",
     title: "Community",
-    body: "Meet new people, stay active, and become part of a club that genuinely looks out for one another on and off the court.",
+    body: "Meet new people and stay active as part of a community volleyball club.",
   },
 ];
 
@@ -57,13 +57,13 @@ export default function MembershipPage() {
           <SectionHeader
             eyebrow="Choose Your Membership"
             title="Find Your Fit"
-            subtitle="Two membership options — both built around a love of volleyball and a great community."
+            subtitle="Two membership options covering social and competitive participation."
           />
           <div className="mx-auto grid max-w-4xl gap-6 sm:grid-cols-2">
             <TierCard
               icon="🏆"
               name="Full Membership"
-              tagline="For competitive athletes hitting the courts in YSVL & SVL."
+              tagline="For competitive athletes playing in YSVL and SVL."
               price="TBC per season"
               features={FULL_FEATURES}
               highlighted
@@ -71,7 +71,7 @@ export default function MembershipPage() {
             <TierCard
               icon="🏐"
               name="Recreational Membership"
-              tagline="For players who love the sport without the league commitment."
+              tagline="For players who want regular volleyball without a league commitment."
               price="TBC per season"
               features={REC_FEATURES}
             />

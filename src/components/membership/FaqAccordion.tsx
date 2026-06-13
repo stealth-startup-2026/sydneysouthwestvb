@@ -5,11 +5,11 @@ import { useState } from "react";
 const FAQS = [
   {
     q: "Do I need experience to join?",
-    a: "Not at all. We have programs specifically designed for complete beginners — our coaches will guide you through everything from your first serve to court positioning. The social sessions are also a low-pressure way to get started.",
+    a: "No. The club runs programs designed for complete beginners, covering everything from your first serve to court positioning. The social sessions are also a low-pressure way to start.",
   },
   {
     q: "What's the difference between Full and Recreational membership?",
-    a: "Full Membership gives you access to our competitive teams (YSVL and SVL) in addition to all training and social sessions. Recreational covers all training and social sessions without the league commitment — perfect if you want regular volleyball without a competition schedule.",
+    a: "Full Membership gives you access to our competitive teams (YSVL and SVL) in addition to all training and social sessions. Recreational covers all training and social sessions without the league commitment, suited to players who want regular volleyball without a competition schedule.",
   },
   {
     q: "Where are sessions held?",

@@ -4,15 +4,15 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 
 const VALUES = [
-  { icon: "🤝", title: "Community", body: "We believe sport is a vehicle for connection. SSWV is a place where players from all walks of life come together, support each other, and grow." },
-  { icon: "📈", title: "Development", body: "Every player deserves quality coaching. We invest in structured skill development at every level — from first touches to competitive play." },
-  { icon: "😄", title: "Fun", body: "Volleyball should be enjoyable. We balance serious training with an atmosphere that keeps every session something to look forward to." },
+  { icon: "🤝", title: "Community", body: "SSWV brings together players of all backgrounds and levels through regular training and competition." },
+  { icon: "📈", title: "Development", body: "Structured skill development is offered at every level, from introductory sessions to competitive play." },
+  { icon: "😄", title: "Fun", body: "Sessions balance structured training with an accessible, enjoyable environment." },
 ];
 
 const COACHES = [
-  { name: "Coach Ba", role: "Head Coach", initials: "B", bio: "Coach Ba is the driving force behind SSWV's technical programs. With competitive and coaching experience, Ba leads with a focus on fundamentals, court awareness, and player confidence. Known for a patient, detail-oriented style that brings out the best in players at every stage." },
-  { name: "Rob", role: "Assistant Coach", initials: "R", bio: "Rob brings a deep understanding of match-play to every session. His competitive background means he knows what it takes to perform under pressure — and he channels that into preparing SSWV players for game day. Known for his energy and genuine encouragement." },
-  { name: "Steven", role: "Skills Coach", initials: "S", bio: "Steven works primarily with beginner and intermediate groups, building the foundational skills that make the rest of the game click. His approachable style and structured progressions have helped dozens of first-time players fall in love with volleyball." },
+  { name: "Coach Ba", role: "Head Coach", initials: "B", bio: "Coach Ba leads SSWV's technical programs, drawing on competitive playing and coaching experience. The focus is on fundamentals, court awareness, and player development, using a patient, detail-oriented coaching approach." },
+  { name: "Rob", role: "Assistant Coach", initials: "R", bio: "Rob brings match-play experience to every session. His competitive background informs how SSWV players are prepared for game day, with a focus on performing under pressure." },
+  { name: "Steven", role: "Skills Coach", initials: "S", bio: "Steven works primarily with beginner and intermediate groups, building the foundational skills needed for the rest of the game. He uses structured progressions suited to new and developing players." },
 ];
 
 export default function AboutPage() {
@@ -25,9 +25,9 @@ export default function AboutPage() {
           <div className="mx-auto max-w-3xl">
             <SectionHeader eyebrow="Who We Are" title="Our Story" />
             <div className="space-y-5 text-base leading-relaxed text-muted">
-              <p>Sydney South West Volleyball was founded in 2021 with a simple mission: give the South West Sydney community access to quality volleyball, without the barriers. Whether you&apos;re a complete beginner, a returning player, or a competitive athlete chasing a league title — SSWV has a place for you.</p>
-              <p>We operate across two venues in Fairfield and Bonnyrigg, making us accessible to players right across the south west corridor. In just a few years, we&apos;ve grown from a small training group into a club with competitive YSVL and SVL teams, a thriving social program, and a coaching staff that genuinely cares about player development.</p>
-              <p>At SSWV, the scoreline matters — but so does the person celebrating beside you after the rally.</p>
+              <p>Sydney South West Volleyball was founded in 2021 to provide access to volleyball training and competition in the South West Sydney community. The club caters to players at all levels, from beginners to competitive athletes.</p>
+              <p>The club operates across two venues in Fairfield and Bonnyrigg. It has grown from a small training group into a club with competitive YSVL and SVL teams, a social program, and a dedicated coaching staff.</p>
+              <p>SSWV accepts new members throughout the year across all of its programs.</p>
             </div>
             <blockquote className="mt-10 border-l-4 border-green pl-6">
               <p className="font-heading text-2xl font-bold uppercase tracking-wide text-green">&ldquo;Volleyball for everyone in South West Sydney.&rdquo;</p>
@@ -54,7 +54,7 @@ export default function AboutPage() {
       <section aria-label="Our Coaching Team" className="bg-surface py-20">
         <Container>
           <SectionHeader eyebrow="The People Behind SSWV" title="Our Coaching Team"
-            subtitle="Three coaches, one shared goal — making you a better player and making SSWV a club you're proud to be part of." />
+            subtitle="Three coaches working across the club's social, development, and competitive programs." />
           <div className="grid gap-10 sm:grid-cols-3">
             {COACHES.map((coach) => (
               <div key={coach.name} className="text-center">

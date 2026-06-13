@@ -11,7 +11,7 @@ export function LocationsSection() {
     <section className="bg-surface py-20">
       <Container>
         <SectionHeader eyebrow="Where to Find Us" title="Our Locations"
-          subtitle="We run sessions across two venues in South West Sydney — close to home for our community." />
+          subtitle="Sessions run across two venues in South West Sydney." />
         <div className="mx-auto grid max-w-3xl gap-6 sm:grid-cols-2">
           {LOCATIONS.map((loc) => (
             <div key={loc.name} className="rounded-xl bg-white p-8 shadow-sm ring-1 ring-dark/5">

@@ -4,9 +4,9 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 
 const PROGRAMS = [
-  { title: "Social Trainings", description: "Low-pressure, high-fun sessions open to all levels. Stay active and meet the SSWV community.", image: "/images/program-social.jpg", href: "/programs#social" },
-  { title: "Weekly Scrims", description: "Informal match play every week. Sharpen your game-sense in real rallies without the league commitment.", image: "/images/program-scrims.jpg", href: "/programs#scrims" },
-  { title: "Beginner & Intermediate Classes", description: "Structured sessions from your first serve to tactical court positioning.", image: "/images/program-classes.jpg", href: "/programs#classes" },
+  { title: "Social Trainings", description: "Sessions open to all skill levels, focused on staying active and playing regularly.", image: "/images/program-social.jpg", href: "/programs#social" },
+  { title: "Weekly Scrims", description: "Informal match play each week, offering game experience without a league commitment.", image: "/images/program-scrims.jpg", href: "/programs#scrims" },
+  { title: "Beginner & Intermediate Classes", description: "Structured sessions covering fundamentals through to tactical court positioning.", image: "/images/program-classes.jpg", href: "/programs#classes" },
 ];
 
 export function ProgramsSnapshot() {
@@ -14,7 +14,7 @@ export function ProgramsSnapshot() {
     <section className="bg-surface py-20">
       <Container>
         <SectionHeader eyebrow="What We Offer" title="Programs for Every Level"
-          subtitle="From your very first touch of the ball to stepping onto a competitive court — we have a program for you." />
+          subtitle="Programs covering all levels, from introductory sessions to competitive play." />
         <div className="grid gap-6 sm:grid-cols-3">
           {PROGRAMS.map((p) => (
             <div key={p.title} className="group overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-dark/5 transition hover:shadow-md">

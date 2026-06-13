@@ -2,9 +2,9 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 
 const COACHES = [
-  { name: "Coach Ba", role: "Head Coach", initials: "B", bio: "Experienced head coach focused on technical fundamentals and game-strategy. The driving force behind SSWV's player development programs." },
-  { name: "Rob", role: "Assistant Coach", initials: "R", bio: "Brings competitive playing experience to sessions. Focuses on team dynamics, match-play preparation, and on-court leadership." },
-  { name: "Steven", role: "Skills Coach", initials: "S", bio: "Works with beginner and intermediate groups. His structured progressions have helped dozens of first-timers fall in love with volleyball." },
+  { name: "Coach Ba", role: "Head Coach", initials: "B", bio: "Head coach focused on technical fundamentals and game strategy, leading SSWV's player development programs." },
+  { name: "Rob", role: "Assistant Coach", initials: "R", bio: "Brings competitive playing experience to sessions, focusing on team dynamics, match-play preparation, and on-court leadership." },
+  { name: "Steven", role: "Skills Coach", initials: "S", bio: "Works with beginner and intermediate groups, using structured progressions to build foundational skills." },
 ];
 
 export function CoachesSection() {
@@ -12,7 +12,7 @@ export function CoachesSection() {
     <section className="bg-white py-20">
       <Container>
         <SectionHeader eyebrow="The People Behind SSWV" title="Meet Our Coaches"
-          subtitle="Our coaching team combines competitive experience with a genuine passion for growing the game in South West Sydney." />
+          subtitle="Our coaching team combines competitive playing and coaching experience across all programs." />
         <div className="grid gap-8 sm:grid-cols-3">
           {COACHES.map((coach) => (
             <div key={coach.name} className="text-center">
