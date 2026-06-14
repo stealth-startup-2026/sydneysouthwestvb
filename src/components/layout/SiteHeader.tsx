@@ -19,8 +19,9 @@ export function SiteHeader() {
     <header className="relative sticky top-0 z-50 border-b border-white/10 bg-forest shadow-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center self-stretch">
-          <div className="flex h-16 w-16 items-center justify-center bg-black">
+          <div className="flex h-16 items-center overflow-hidden bg-black">
             <Image src="/images/logo.jpg" alt="Sydney South West Volleyball" width={64} height={64} className="object-cover" preload />
+            <span className="font-heading text-3xl font-bold uppercase tracking-normal text-white px-4">SSWV</span>
           </div>
         </Link>
         <nav className="hidden items-center gap-1 md:flex">
