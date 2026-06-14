@@ -64,8 +64,9 @@ export function SiteFooter() {
             </div>
           </div>
         </div>
-        <div className="mt-12 border-t border-green/30 pt-6 text-center text-xs text-white/40">
-          © {new Date().getFullYear()} Sydney South West Volleyball. All rights reserved.
+        <div className="mt-12 border-t border-green/30 pt-6 flex flex-col items-center gap-1 text-center text-xs text-white/40 sm:flex-row sm:justify-between">
+          <span>© {new Date().getFullYear()} Sydney South West Volleyball. All rights reserved.</span>
+          <span>Made by <a href="https://purpl.solutions" target="_blank" rel="noopener noreferrer" className="text-white/60 transition hover:text-gold">purpl</a></span>
         </div>
       </div>
     </footer>
