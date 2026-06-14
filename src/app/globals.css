@@ -10,9 +10,8 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-green: #3d7a4f;
-  /* Reverted to the old near-black for now; set back to #305a3d to re-enable the forest theme */
-  --color-forest: #1c2b22;
-  --color-dark: #1c2b22;
+  --color-forest: #243c2d;
+  --color-dark: #243c2d;
   --color-gold: #c9a84c;
   --color-surface: #f7f9f7;
   --color-muted: #6b7c70;
