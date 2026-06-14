@@ -9,6 +9,7 @@ const LINKS = [
   { label: "Programs", href: "/programs" },
   { label: "Teams", href: "/teams" },
   { label: "Membership", href: "/membership" },
+  { label: "Locations", href: "/#locations" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -24,7 +25,7 @@ export function MobileMenu() {
         <span className={`block h-0.5 w-6 bg-current transition-transform ${open ? "-translate-y-2 -rotate-45" : ""}`} />
       </button>
       {open && (
-        <div className="absolute left-0 top-full z-50 w-full bg-dark py-4 shadow-lg">
+        <div className="absolute left-0 top-full z-50 w-full bg-forest py-4 shadow-lg">
           {LINKS.map((link) => {
             const active = pathname === link.href;
             return (

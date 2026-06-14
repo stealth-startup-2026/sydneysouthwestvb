@@ -23,11 +23,11 @@ export function TrialsCta() {
             Trials for YSVL and SVL teams are held each season. Here&apos;s how it works:
           </p>
         </div>
-        <div className="mx-auto mt-12 grid max-w-3xl gap-4 sm:grid-cols-2">
+        <div className="mx-auto mt-12 grid max-w-3xl gap-px border border-white/15 bg-white/15 sm:grid-cols-2">
           {STEPS.map((step) => (
             <div
               key={step.num}
-              className="flex gap-4 rounded-xl bg-dark/30 px-6 py-5"
+              className="flex gap-4 bg-dark/30 px-6 py-6"
             >
               <span className="font-heading text-3xl font-bold text-gold/50">
                 {step.num}

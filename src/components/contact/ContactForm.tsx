@@ -5,14 +5,14 @@ export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
   if (submitted) {
     return (
-      <div className="rounded-xl bg-green/10 p-8 text-center ring-1 ring-green/20">
+      <div className="border border-green/20 bg-green/10 p-8 text-center">
         <span aria-hidden="true" className="text-4xl">✅</span>
         <p className="mt-4 font-heading text-xl font-bold uppercase tracking-wide text-green">Message Sent!</p>
         <p className="mt-2 text-sm text-muted">We&apos;ll be in touch shortly.</p>
       </div>
     );
   }
-  const inputCls = "w-full rounded-lg border border-dark/15 bg-white px-4 py-3 text-sm text-dark placeholder:text-muted focus:border-green focus:outline-none focus:ring-1 focus:ring-green";
+  const inputCls = "w-full border border-dark/15 bg-white px-4 py-3 text-sm text-dark placeholder:text-muted focus:border-green focus:outline-none focus:ring-1 focus:ring-green";
   const labelCls = "mb-1.5 block font-heading text-xs font-semibold uppercase tracking-wider text-dark";
   return (
     <form onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }} className="space-y-5">
@@ -27,7 +27,7 @@ export function ContactForm() {
         </select>
       </div>
       <div><label htmlFor="message" className={labelCls}>Message</label><textarea id="message" required rows={5} placeholder="How can we help?" className={`${inputCls} resize-none`} /></div>
-      <button type="submit" className="w-full rounded-lg bg-green py-3 font-heading text-sm font-semibold uppercase tracking-widest text-white transition hover:brightness-110">Send Message</button>
+      <button type="submit" className="w-full bg-green py-3.5 font-heading text-sm font-semibold uppercase tracking-widest text-white transition hover:brightness-110">Send Message</button>
     </form>
   );
 }

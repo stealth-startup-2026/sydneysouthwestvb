@@ -59,7 +59,7 @@ export default function MembershipPage() {
             title="Find Your Fit"
             subtitle="Two membership options covering social and competitive participation."
           />
-          <div className="mx-auto grid max-w-4xl gap-6 sm:grid-cols-2">
+          <div className="mx-auto grid max-w-4xl divide-y divide-dark/10 border border-dark/10 sm:grid-cols-2 sm:divide-x sm:divide-y-0">
             <TierCard
               icon="🏆"
               name="Full Membership"
@@ -82,14 +82,14 @@ export default function MembershipPage() {
         </Container>
       </section>
 
-      <section aria-label="Why join SSWV" className="bg-dark py-20">
+      <section aria-label="Why join SSWV" className="bg-forest py-20">
         <Container>
           <SectionHeader eyebrow="Why SSWV?" title="Why Join Us?" light />
-          <div className="grid gap-6 sm:grid-cols-3">
+          <div className="grid divide-y divide-white/10 border border-white/10 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
             {WHY.map((w) => (
               <div
                 key={w.title}
-                className="rounded-xl border border-green/30 bg-white/5 px-6 py-8 text-center"
+                className="bg-white/5 px-6 py-10 text-center"
               >
                 <span aria-hidden="true" className="mb-4 block text-4xl">
                   {w.icon}

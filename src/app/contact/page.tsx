@@ -46,8 +46,8 @@ export default function ContactPage() {
               <div>
                 <p className="mb-3 font-heading text-sm font-semibold uppercase tracking-widest text-gold">Follow Us</p>
                 <div className="flex gap-3">
-                  <a href="#" aria-label="Instagram" className="flex h-10 w-10 items-center justify-center rounded-full bg-dark/5 text-dark transition hover:bg-green hover:text-white">{INSTAGRAM_SVG}</a>
-                  <a href="#" aria-label="Facebook" className="flex h-10 w-10 items-center justify-center rounded-full bg-dark/5 text-dark transition hover:bg-green hover:text-white">{FACEBOOK_SVG}</a>
+                  <a href="#" aria-label="Instagram" className="flex h-10 w-10 items-center justify-center bg-dark/5 text-dark transition hover:bg-green hover:text-white">{INSTAGRAM_SVG}</a>
+                  <a href="#" aria-label="Facebook" className="flex h-10 w-10 items-center justify-center bg-dark/5 text-dark transition hover:bg-green hover:text-white">{FACEBOOK_SVG}</a>
                 </div>
               </div>
             </div>

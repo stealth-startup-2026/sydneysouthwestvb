@@ -2,7 +2,7 @@ import { Container } from "@/components/ui/Container";
 
 export function JoinCtaBanner() {
   return (
-    <section className="bg-dark py-20">
+    <section className="bg-forest py-20">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-heading text-4xl font-bold uppercase tracking-wide text-white sm:text-5xl">

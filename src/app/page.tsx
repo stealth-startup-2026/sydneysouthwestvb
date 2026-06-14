@@ -14,7 +14,7 @@ const bricolage = Bricolage_Grotesque({ subsets: ["latin"] });
 export default function HomePage() {
   return (
     <>
-      <section aria-label="Hero" className="relative flex min-h-[72vh] items-center overflow-hidden bg-dark">
+      <section aria-label="Hero" className="relative flex min-h-[80vh] items-center overflow-hidden bg-forest">
         <HeroSlideshow />
         <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
           <h1 style={{ fontFamily: alfaSlab.style.fontFamily }}

@@ -18,8 +18,8 @@ export function TeamCard({
   division,
 }: TeamCardProps) {
   return (
-    <div className="overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-dark/5">
-      <div className="relative h-56">
+    <div className="flex flex-col bg-white">
+      <div className="relative h-56 overflow-hidden">
         <Image
           src={image}
           alt={imageAlt}
@@ -28,7 +28,7 @@ export function TeamCard({
           sizes="(max-width: 768px) 100vw, 50vw"
         />
         {division && (
-          <span className="absolute left-4 top-4 rounded bg-gold px-3 py-1 font-heading text-xs font-semibold uppercase tracking-wider text-dark">
+          <span className="absolute left-4 top-4 bg-gold px-3 py-1 font-heading text-xs font-semibold uppercase tracking-wider text-dark">
             {division}
           </span>
         )}

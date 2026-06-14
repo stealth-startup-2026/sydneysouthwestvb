@@ -38,7 +38,7 @@ export default function TeamsPage() {
             title="YSVL Teams"
             subtitle="The Youth Sydney Volleyball League — structured junior competition for players aged 12–18 in an organised setting."
           />
-          <div className="grid gap-6 sm:grid-cols-2">
+          <div className="grid divide-y divide-dark/10 border border-dark/10 sm:grid-cols-2 sm:divide-x sm:divide-y-0">
             <TeamCard
               name="SSWV Youth"
               league="Youth Sydney Volleyball League"
@@ -47,7 +47,7 @@ export default function TeamsPage() {
               image="/images/teams-ysvl.jpg"
               imageAlt="SSWV youth team"
             />
-            <div className="flex items-center justify-center rounded-xl bg-white p-8 ring-1 ring-dark/5 text-center">
+            <div className="flex items-center justify-center bg-white p-8 text-center">
               <div>
                 <p className="font-heading text-xl font-bold uppercase tracking-wide text-dark">
                   More Teams Coming
@@ -62,7 +62,7 @@ export default function TeamsPage() {
         </Container>
       </section>
 
-      <section aria-label="SVL Teams" className="bg-dark py-16">
+      <section aria-label="SVL Teams" className="bg-forest py-16">
         <Container>
           <SectionHeader
             eyebrow="Adult Competition"
@@ -70,7 +70,7 @@ export default function TeamsPage() {
             subtitle="The Sydney Volleyball League — adult competition for players ready to represent SSWV at a higher level."
             light
           />
-          <div className="grid gap-6 sm:grid-cols-2">
+          <div className="grid divide-y divide-white/10 border border-white/10 sm:grid-cols-2 sm:divide-x sm:divide-y-0">
             <TeamCard
               name="SSWV Men's"
               league="Sydney Volleyball League"
@@ -79,7 +79,7 @@ export default function TeamsPage() {
               image="/images/teams-svl.jpg"
               imageAlt="SSWV men's team match"
             />
-            <div className="flex items-center justify-center rounded-xl bg-white/10 p-8 ring-1 ring-white/10 text-center">
+            <div className="flex items-center justify-center bg-white/10 p-8 text-center">
               <div>
                 <p className="font-heading text-xl font-bold uppercase tracking-wide text-white">
                   Women&apos;s Team — Coming Soon

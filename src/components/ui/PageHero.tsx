@@ -7,7 +7,7 @@ export function PageHero({
   title: string; subtitle?: string; imageSrc?: string; imageAlt?: string;
 }) {
   return (
-    <section className="relative flex h-64 items-end bg-dark md:h-80">
+    <section className="relative flex h-64 items-end bg-forest md:h-80">
       {imageSrc && (
         <Image src={imageSrc} alt={imageAlt} fill className="object-cover opacity-30" preload sizes="100vw" />
       )}

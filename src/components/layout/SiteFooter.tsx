@@ -24,12 +24,12 @@ const QUICK_LINKS = [
 
 export function SiteFooter() {
   return (
-    <footer className="bg-dark text-white">
+    <footer className="bg-forest text-white">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-3">
           <div>
             <div className="flex items-center gap-3">
-              <Image src="/images/logo.jpg" alt="SSWV" width={48} height={48} className="rounded-full object-cover" />
+              <Image src="/images/logo.jpg" alt="SSWV" width={48} height={48} className="object-cover" />
               <div>
                 <p className="font-heading text-xl font-bold uppercase leading-tight tracking-wide text-white">Sydney South West</p>
                 <p className="font-heading text-xl font-bold uppercase leading-tight tracking-wide text-green">Volleyball</p>
@@ -55,10 +55,10 @@ export function SiteFooter() {
               <li><a href="mailto:info@sswv.com.au" className="hover:text-green">✉️ info@sswv.com.au</a></li>
             </ul>
             <div className="mt-6 flex gap-3">
-              <a href="#" aria-label="Instagram" className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white/70 transition hover:border-gold hover:text-gold">
+              <a href="#" aria-label="Instagram" className="flex h-10 w-10 items-center justify-center border border-white/20 text-white/70 transition hover:border-gold hover:text-gold">
                 {INSTAGRAM_SVG}
               </a>
-              <a href="#" aria-label="Facebook" className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white/70 transition hover:border-gold hover:text-gold">
+              <a href="#" aria-label="Facebook" className="flex h-10 w-10 items-center justify-center border border-white/20 text-white/70 transition hover:border-gold hover:text-gold">
                 {FACEBOOK_SVG}
               </a>
             </div>

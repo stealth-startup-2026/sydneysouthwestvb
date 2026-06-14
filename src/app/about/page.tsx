@@ -36,12 +36,12 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <section aria-label="Our Values" className="bg-dark py-20">
+      <section aria-label="Our Values" className="bg-forest py-20">
         <Container>
           <SectionHeader eyebrow="What We Stand For" title="Our Values" light />
-          <div className="grid gap-6 sm:grid-cols-3">
+          <div className="grid divide-y divide-white/10 border border-white/10 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
             {VALUES.map((v) => (
-              <div key={v.title} className="rounded-xl border border-green/30 bg-white/5 px-6 py-8 text-center">
+              <div key={v.title} className="bg-white/5 px-6 py-10 text-center">
                 <span aria-hidden="true" className="mb-4 block text-4xl">{v.icon}</span>
                 <h3 className="mb-3 font-heading text-xl font-bold uppercase tracking-wide text-gold">{v.title}</h3>
                 <p className="text-sm leading-relaxed text-white/70">{v.body}</p>
@@ -58,7 +58,7 @@ export default function AboutPage() {
           <div className="grid gap-10 sm:grid-cols-3">
             {COACHES.map((coach) => (
               <div key={coach.name} className="text-center">
-                <div className="mx-auto mb-5 flex h-28 w-28 items-center justify-center rounded-full bg-green font-heading text-4xl font-bold text-white ring-4 ring-green/20">
+                <div className="mx-auto mb-5 flex h-28 w-28 items-center justify-center bg-green font-heading text-4xl font-bold text-white ring-4 ring-green/20">
                   {coach.initials}
                 </div>
                 <h3 className="font-heading text-2xl font-bold uppercase tracking-wide text-dark">{coach.name}</h3>

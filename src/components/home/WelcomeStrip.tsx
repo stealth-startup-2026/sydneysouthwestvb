@@ -8,7 +8,7 @@ const PILLARS = [
 
 export function WelcomeStrip() {
   return (
-    <section className="bg-dark py-20">
+    <section className="bg-forest py-20">
       <Container>
         <div className="mb-10 text-center">
           <p className="mb-2 font-heading text-sm font-semibold uppercase tracking-widest text-gold">Est. 2021 · Fairfield &amp; Bonnyrigg</p>
@@ -17,9 +17,9 @@ export function WelcomeStrip() {
             Sydney South West Volleyball is a community club offering training and competition for players of all levels.
           </p>
         </div>
-        <div className="grid gap-6 sm:grid-cols-3">
+        <div className="grid divide-y divide-white/10 border border-white/10 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
           {PILLARS.map((p) => (
-            <div key={p.title} className="rounded-xl border border-green/30 bg-white/5 px-6 py-8 text-center">
+            <div key={p.title} className="bg-white/5 px-6 py-10 text-center">
               <span aria-hidden="true" className="mb-4 block text-4xl">{p.icon}</span>
               <h3 className="mb-3 font-heading text-xl font-bold uppercase tracking-wide text-gold">{p.title}</h3>
               <p className="text-sm leading-relaxed text-white/70">{p.body}</p>

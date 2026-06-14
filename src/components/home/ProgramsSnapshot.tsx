@@ -15,13 +15,13 @@ export function ProgramsSnapshot() {
       <Container>
         <SectionHeader eyebrow="What We Offer" title="Programs for Every Level"
           subtitle="Programs covering all levels, from introductory sessions to competitive play." />
-        <div className="grid gap-6 sm:grid-cols-3">
+        <div className="grid divide-y divide-dark/10 border border-dark/10 bg-white sm:grid-cols-3 sm:divide-x sm:divide-y-0">
           {PROGRAMS.map((p) => (
-            <div key={p.title} className="group overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-dark/5 transition hover:shadow-md">
+            <div key={p.title} className="group flex flex-col transition-colors hover:bg-surface">
               <div className="relative h-48 overflow-hidden">
                 <Image src={p.image} alt={p.title} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="(max-width: 768px) 100vw, 33vw" />
               </div>
-              <div className="p-5">
+              <div className="flex flex-1 flex-col p-6">
                 <h3 className="font-heading text-lg font-bold uppercase tracking-wide text-dark">{p.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">{p.description}</p>
                 <Link href={p.href} className="mt-4 inline-block font-heading text-sm font-semibold uppercase tracking-wider text-green hover:underline">Learn More →</Link>

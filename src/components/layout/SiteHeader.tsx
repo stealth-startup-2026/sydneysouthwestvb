@@ -9,17 +9,18 @@ const NAV = [
   { label: "Programs", href: "/programs" },
   { label: "Teams", href: "/teams" },
   { label: "Membership", href: "/membership" },
+  { label: "Locations", href: "/#locations" },
   { label: "Contact", href: "/contact" },
 ];
 
 export function SiteHeader() {
   const pathname = usePathname();
   return (
-    <header className="relative sticky top-0 z-50 border-b border-white/10 bg-dark shadow-md">
+    <header className="relative sticky top-0 z-50 border-b border-white/10 bg-forest shadow-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center">
-          <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-black">
-            <Image src="/images/logo.jpg" alt="Sydney South West Volleyball" width={52} height={52} className="rounded-lg object-cover" preload />
+          <div className="flex h-14 w-14 items-center justify-center bg-black">
+            <Image src="/images/logo.jpg" alt="Sydney South West Volleyball" width={52} height={52} className="object-cover" preload />
           </div>
         </Link>
         <nav className="hidden items-center gap-1 md:flex">

@@ -59,7 +59,7 @@ export default function ProgramsPage() {
           <ProgramBlock key={p.id} {...p} />
         ))}
       </section>
-      <section aria-label="Contact prompt" className="bg-dark py-16">
+      <section aria-label="Contact prompt" className="bg-forest py-16">
         <Container>
           <div className="text-center">
             <h2 className="font-heading text-3xl font-bold uppercase tracking-wide text-white sm:text-4xl">

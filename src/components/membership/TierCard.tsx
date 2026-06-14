@@ -22,10 +22,8 @@ export function TierCard({
 }: TierCardProps) {
   return (
     <div
-      className={`flex flex-col rounded-xl p-8 ring-2 ${
-        highlighted
-          ? "bg-green ring-green shadow-lg"
-          : "bg-white ring-dark/10 shadow-sm"
+      className={`flex flex-col p-8 ${
+        highlighted ? "bg-green" : "bg-white"
       }`}
     >
       <span aria-hidden="true" className="mb-3 block text-4xl">
@@ -88,7 +86,7 @@ export function TierCard({
         className={`mt-8 block rounded py-3 text-center font-heading text-sm font-semibold uppercase tracking-wider transition ${
           highlighted
             ? "bg-gold text-dark hover:brightness-110"
-            : "bg-dark text-white hover:bg-green"
+            : "bg-forest text-white hover:bg-green"
         }`}
       >
         Join Now

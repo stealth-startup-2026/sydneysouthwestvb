@@ -8,16 +8,16 @@ const INSTAGRAM_ICON = (
 
 export function SocialFeedPlaceholder() {
   return (
-    <section aria-label="Instagram feed" className="bg-dark py-20">
+    <section aria-label="Instagram feed" className="bg-forest py-20">
       <Container>
         <div className="text-center">
           <p className="mb-2 font-heading text-sm font-semibold uppercase tracking-widest text-gold">Instagram</p>
           <h2 className="font-heading text-4xl font-bold uppercase tracking-wide text-white sm:text-5xl">Follow <span className="text-gold">@sswvolleyball</span></h2>
           <p className="mx-auto mt-3 max-w-md text-sm text-white/60">Stay up to date with training times, match results, and club news.</p>
         </div>
-        <div className="mt-10 grid grid-cols-3 gap-2 sm:grid-cols-6">
+        <div className="mt-10 grid grid-cols-3 gap-px border border-white/10 bg-white/10 sm:grid-cols-6">
           {Array.from({ length: 6 }).map((_, i) => (
-            <div key={i} className="flex aspect-square items-center justify-center rounded-lg bg-white/5 ring-1 ring-white/10">{INSTAGRAM_ICON}</div>
+            <div key={i} className="flex aspect-square items-center justify-center bg-dark">{INSTAGRAM_ICON}</div>
           ))}
         </div>
         <div className="mt-8 text-center">
